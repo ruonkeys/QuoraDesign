@@ -28,7 +28,7 @@
 
 <div class="area3">
 <ul class="nav nav-pills list">
-<li><a href="#"><i class="fa fa-file-text-o"></i> <span class="bar">Read</span></a></li>
+<li><a href="readpage.html"><i class="fa fa-file-text-o"></i> <span class="bar">Read</span></a></li>
 <li><a href="Answer.html"><i class="fa fa-pencil"></i> <span class="bar">Answer</span></a><li>
 <li><a href="#"><i class="fa fa-bell-o"></i> <span class="bar">Notifications</span></a></li>
 <li><a href="ProfilePage.html" class="name" data-toggle="popover" data-placement="bottom" title="Popover Header"  data-content="Some content inside" ><img src="IMG_20150427_214234.jpg" alt="" class="image" /><span class="bar" style="color:#b92b27;">Rahul</span></a></li>
@@ -86,7 +86,7 @@ $(document).ready(function()
 Questions For You
 </div>
 <!--loop start-->
-<div class="s2hidcnt">
+<div class="s2hidcnt" style="display:none" id="jhd">
 <div class="hd1">
 You downvoted this question
 </div>
@@ -94,7 +94,7 @@ You downvoted this question
 Downvoting low-quality questions improves quora for everyone
 </div>
 <div class="hd3">
-<a href="#">Undo</a>&nbsp;&bull;&nbsp;<a href="#">Report</a>&nbsp;&bull;&nbsp;<a href="#">Unfollow Web Development</a>
+<a href="#" id="ujhd">Undo</a>&nbsp;&bull;&nbsp;<a href="#">Report</a>&nbsp;&bull;&nbsp;<a href="#">Unfollow Web Development</a>
 </div>
 </div>
 
@@ -122,12 +122,27 @@ $(document).ready(function(){
 <button class="bt" type="button"><i class="fa fa-pencil"></i><span>&nbsp; Answer</span></button>&nbsp;&nbsp;
 <button type="button" class="bt1">&nbsp;Pass&nbsp;</button>&nbsp;&nbsp;
 <a href="#" class="tln" style="font-size:13px;">Follow <span class="sp">3</span></a>&nbsp;&nbsp;
-<a href="#" class="tln" style="font-size:13px;">Downvote</a>
+<a href="#" class="tln" style="font-size:13px;" id="cjhd">Downvote</a>
 <button type="button" class="dbtn ppbt"><b>&bull;&nbsp;&bull;&nbsp;&bull;</b></button>
 <script>
 $(document).ready(function(){
 	$('.ppbt').popover({title:"title", content:"content", trigger:"click", placement:"bottom"});
 });
+</script>
+<script>
+$(document).ready(function()
+{
+	$("#cjhd").click(function(){
+		$("#jhd").show();
+	});
+	
+	$("#ujhd").click(function()
+	{
+		$("#jhd").hide();	
+	}
+	);
+}
+);
 </script>
 </div>
 
