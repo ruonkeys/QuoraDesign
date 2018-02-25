@@ -3,7 +3,9 @@ It contains web pages which are kind of a clone of some of the pages of quora.co
 ## Screenshots
 
 ![](ScreenShots/profilePage.PNG)
-<br/>
+<hr/>
+
 ![](ScreenShots/readPage.PNG)
-<br/>
+<hr/>
+
 ![](ScreenShots/answerPage.PNG)
